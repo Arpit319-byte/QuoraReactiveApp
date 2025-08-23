@@ -19,6 +19,9 @@ import java.util.Date;
 public class Question extends BaseModel{
 
 
+    @NotBlank(message="User ID cannot be blank")
+    private String authorId;
+
     @NotBlank(message = "Title cannot be blank")
     private String title;
 

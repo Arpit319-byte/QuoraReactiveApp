@@ -15,6 +15,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class QuestionRequestDTO {
 
+    @NotBlank(message = "User ID cannot be blank")
+    private String authorId;
 
     @NotBlank(message = "Title cannot be blank")
     @Size(min=10, max = 100, message = "Title cannot exceed 100 characters")

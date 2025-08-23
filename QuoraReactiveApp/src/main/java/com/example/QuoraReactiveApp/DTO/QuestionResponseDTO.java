@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 public class QuestionResponseDTO{
 
     private String id;
+    private String authorId;
     private String title;
     private String content;
     private LocalDateTime createdAt;

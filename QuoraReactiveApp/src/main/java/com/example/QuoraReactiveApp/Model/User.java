@@ -1,4 +1,5 @@
 package com.example.QuoraReactiveApp.Model;
+
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 

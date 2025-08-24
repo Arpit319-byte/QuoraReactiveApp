@@ -1,14 +1,8 @@
 package com.example.QuoraReactiveApp.Model;
-import com.example.QuoraReactiveApp.Model.BaseModel;
+
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.time.LocalDateTime;
-import java.util.Date;
 
 @Getter
 @Setter
@@ -16,8 +10,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 @Document(collection = "questions")
-public class Question extends BaseModel{
-
+public class Question extends BaseModel {
 
     @NotBlank(message="User ID cannot be blank")
     private String authorId;
@@ -27,5 +20,4 @@ public class Question extends BaseModel{
 
     @NotBlank(message = "Content cannot be blank")
     private String content;
-
 }
